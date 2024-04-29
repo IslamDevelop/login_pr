@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="forms">
+        <h1>Stax Food Admin Login</h1>
+        <div class="forms_login">
+            <form action="https://httpbin.org/post" method="post">
+                <legend>Please fill in your unique admin login details below</legend>
+                <div class="forms-gap">
+                    <div class="flex-col">
+                        <label for="mail">Email address</label>
+                        <input type="email" name="email" id="mail" required>
+                    </div>
+                    <div class="flex-col">
+                        <label for="user_password">Password</label>
+                        <div class="icon">
+                            <input type="password" name="password" id="user_password" required>
+                            <i class='bx bx-low-vision'></i>
+                        </div>
+                        <a href="#">forgot password?</a>
+                    </div>
+                    
+                    <div class="sign_button">
+                        <button class="but">Sign in</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <button class="theme-toggle">Включить тему</button>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js"></script>
+</body>
+</html>
